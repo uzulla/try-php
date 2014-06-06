@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1; user-scalable=no">
+    <title>ブラウザでPHPためせる君（仮称）</title>
+
+    <link href="public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="public/css/repl.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">ブラウザでPHPためせる君</a>
+        </div>
+    </div>
+</div><!-- /#nav -->
+
+<div id="workbench" class="container">
+    <div>
+        <label for="editor">コード入力欄</label><pre id="editor">&lt;?php
+echo "Hello world!";</pre>
+    </div>
+    <button id="execute-button" class="btn btn-primary center-block">実行</button>
+    <div>
+        <label for="result">結果表示欄</label> <textarea id="result" style="height:50px"></textarea>
+        <label for="output">出力表示欄</label> <textarea id="output"></textarea>
+    </div>
+</div><!-- /#workbench -->
+
+
+<script src="public/vendor/jquery/jquery.min.js"></script>
+<script src="public/vendor/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="public/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="public/js/repl.js"></script>
+</body>
+</html>

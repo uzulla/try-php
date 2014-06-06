@@ -1,0 +1,12 @@
+{
+    "name": "popoh",
+    "authors": [
+        "uzulla <uzulla@himitsukichi.com>"
+    ],
+    "private": true,
+    "dependencies": {
+        "bootstrap": "*",
+        "jquery": "1",
+        "ace-builds" : "*"
+    }
+}
