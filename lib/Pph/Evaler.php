@@ -11,6 +11,9 @@ class Evaler
     public function __construct(){
         $this->parser = new \PHPParser_Parser(new \PHPParser_Lexer);
         $this->sandbox = new \PHPSandbox\PHPSandbox;
+        $white_list = ['print_r', 'date', 'rand', 'mb_strlen']; // TODO追い出しする
+        $this->sandbox->whitelist_func($white_list);
+
         $this->evalResult = new EvalResult;
     }
 
