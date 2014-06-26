@@ -8,6 +8,7 @@
 
     <link href="public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="public/css/repl.css" rel="stylesheet">
+    <link href="public/vendor/codemirror/codemirror.css" rel="stylesheet">
 </head>
 <body>
 
@@ -21,8 +22,8 @@
 
 <div id="workbench" class="container">
     <div>
-        <label for="editor">コード入力欄</label><pre id="editor">&lt;?php
-echo "Hello world!";</pre>
+        <label for="editor">コード入力欄</label><textarea id="editor">&lt;?php
+echo "Hello world!";</textarea>
     </div>
     <button id="execute-button" class="btn btn-primary center-block">実行</button>
     <div>
@@ -33,7 +34,16 @@ echo "Hello world!";</pre>
 
 
 <script src="public/vendor/jquery/jquery.min.js"></script>
-<script src="public/vendor/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="public/vendor/codemirror/codemirror.js" type="text/javascript" charset="utf-8"></script>
+<script src="public/vendor/codemirror/htmlmixed.js"></script>
+<script src="public/vendor/codemirror/xml.js"></script>
+<script src="public/vendor/codemirror/javascript.js"></script>
+<script src="public/vendor/codemirror/css.js"></script>
+<script src="public/vendor/codemirror/clike.js"></script>
+<script src="public/vendor/codemirror/php.js" type="text/javascript" charset="utf-8"></script>
+
+
+<script src="public/vendor/codemirror/matchbrackets.js" type="text/javascript" charset="utf-8"></script>
 <script src="public/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="public/js/repl.js"></script>
 </body>

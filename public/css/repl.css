@@ -1,14 +1,19 @@
 textarea{
     width:100%;
-    height:100px;
 }
 
 #workbench{
     margin-top:65px;
 }
 
-#editor{
-    height:300px;
+.CodeMirror{
+    font-size:200%;
+    height:200px !important;
+    border: solid 1px #737373;
+}
+
+.CodeMirror span{
+    font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
 }
 
 .error{

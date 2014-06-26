@@ -1,8 +1,14 @@
 var pph = {
     editor: undefined,
     init: function(){
-        this.editor = ace.edit("editor");
-        this.editor.getSession().setMode("ace/mode/php");
+        this.editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
+            lineNumbers: true,
+            matchBrackets: true,
+            mode: "application/x-httpd-php",
+            indentUnit: 4,
+            indentWithTabs: true
+
+        });
         $('#execute-button').click(pph.reqEval);
         $(document).keydown(pph.shortcut);
     },
