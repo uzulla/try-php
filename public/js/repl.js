@@ -13,6 +13,9 @@ var pph = {
         $(document).keydown(pph.shortcut);
     },
     reqEval: function(){
+        $("#output").text('');
+        $("#result").removeClass('sucesss').text('');
+        $("#execute_indicator").show();
         $.ajax({
             url: 'eval.php',
             type: 'post',
@@ -41,6 +44,7 @@ var pph = {
         }else{
             $output.text(data.output);
         }
+        $("#execute_indicator").fadeOut();
     },
     shortcut: function (e){
         // CMD + Enter or CTRL + Enter to run code
