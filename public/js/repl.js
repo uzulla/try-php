@@ -14,7 +14,7 @@ var pph = {
     },
     reqEval: function(){
         $("#output").text('');
-        $("#result").removeClass('sucesss').text('');
+        $("#result").removeClass('success').text('');
         $("#execute_indicator").show();
         $.ajax({
             url: 'eval.php',
