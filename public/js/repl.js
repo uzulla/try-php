@@ -45,6 +45,7 @@ var pph = {
             $output.text(data.output);
         }
         $("#execute_indicator").fadeOut();
+        pph.editor.focus();
     },
     shortcut: function (e){
         // CMD + Enter or CTRL + Enter to run code
